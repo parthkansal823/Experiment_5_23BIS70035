@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    
+    <title>Product Lists</title>
+</head>
+<body>
+    <h2>Product Input Fields</h2>
+    <input type="number" id="productid" placeholder="Enter Product ID"><br>
+    <input type="text" id="productname" placeholder="Enter Product Name"><br>
+    <input type="number" id="productprice" placeholder="Enter Product Price"><br>
+    <input type="text" id="productcategory" placeholder="Enter Product Category"><br>
+
+    <input type="button" value="Add Product" onclick="addproductlist()"><br><br>
+
+    <label for="categoryDropdown"><b>Filter By Category</b></label><br>
+    <select id="categoryDropdown" onchange="filterbycategory()">
+        <option value="all">--- All Categories ---</option>
+    </select>
+    <br><br>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price($)</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody id="producttablebody"></tbody>
+    </table>
+</body>
+</html>
