@@ -57,6 +57,43 @@ The filtering and display changes must happen **dynamically using JavaScript wit
 ```
 ### CSS [View Code](style.css)
 ```
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+input[type="text"],input[type="number"]{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+select {
+  padding: 5px 6px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid powderblue;
+}
 
 ```
 
